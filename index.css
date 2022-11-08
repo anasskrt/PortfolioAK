@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:wght@300&display=swap');
+
+body > h1{
+  margin-top: 2vw;
+  font-family: 'Baskervville',serif;
+  font-size: 40px;
+  transition: 2ms;
+  z-index: 1;
+}
+
+#acceuil {
+  position: relative;
+  color: rgba(255, 255, 255, 0.993);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#acceuil > img{
+  width: 100%;
+  opacity:95%;
+  margin: 0px;
+  object-fit: cover;
+  height: 74vh;
+}
+
+body{
+  background-color: rgb(244, 242, 236);
+  text-align: center;
+  font-size: 15px;
+  font-family: "lato",sans-serif;
+  margin: 0px;
+}
+
+#title{
+  position: sticky;
+  z-index: 10;
+}
+/*Menu déroulant*/
+#menu{
+  width: 100%;
+  background-color: rgb(244, 242, 236);
+  z-index: 10;
+  top: 0px;
+  position: sticky;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* je sais plus*/
+#texte{
+  color: black;
+  font-family: 'Playfair Display', serif;
+  width: 70vw;
+  margin-bottom: 20px;
+}
+
+div > h2{
+  margin-top: 0px;
+  padding-top: 60px;
+}
+
+h2{
+ color: rgb(121,37,61);
+  font-family: 'Baskervville',serif;
+  font-size: 40px;
+}
+
+h3{
+  color: rgb(121,37,61);
+  font-family: 'Baskervville',serif;
+  font-size: 30px;
+}
+
+#formation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(235,234,231);
+}
+
+#formation > span{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  width: 80vw;
+}
+
+#formation > span > img{
+  flex: 1;
+  width: 10vw;
+  height: 10vw;
+  object-fit:contain;
+}
+
+#formation > span > div{
+  flex: 2;
+  padding: 20px;
+}
+
+#formation > span > div >p:first-child{
+  color: rgb(121,37,61);
+  font-size: 22px;
+  font-family: 'Baskervville',serif;
+  font-weight: bold;
+}
+
+#formation > span > p{
+  flex: 3;
+  padding: 20px;
+}
+
+
+#Projet{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+ #Projet > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px;
+  text-decoration:none; 
+  color: black;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.2em;
+}
+
+#Projet > div img{
+  height: 25vw;
+  width: 27vw;
+}
+
+#Projet > div p{
+  position: absolute;
+  font-size: 3vw;
+  font-weight: bold;
+  color: rgb(0, 0, 0,0);
+}
+
+#Projet > div:hover p {
+  color: whitesmoke;
+}
+
+#Projet > div img:hover{
+  filter: brightness(50%);
+  transition-duration: 1s;
+}
+
+
+/***/
+#formulaire{
+  padding-bottom: 7vh;
+  padding-top: 1vh;
+  display: flex;
+  justify-content: center;
+  color: #303030;
+  background-color: rgb(235,234,231);
+  font-family: 'Playfair Display', serif;
+  font-size: small;
+}
+
+#contact {
+  width: 700px;
+  }
+  
+  form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 25px;
+  }
+  
+  form div > label {
+  padding: 5px;
+  margin-bottom: 7px;
+  font-weight: 600;
+  }
+  
+  form div > input, form div > select, form div > textarea {
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.65);
+  }
+  
+  form div > input, form div > textarea{
+  height: 6vh;
+  padding-left: 5px;
+  width: 100%;
+  background: none;
+  font-family: 'Playfair Display', serif;
+  font-size: small;
+  }
+  
+  form div > select {
+  appearance: none;
+  background-size: 15px;
+  background-color:rgb(140, 50, 50); 
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  }
+  
+  form div > textarea {
+  height: 15vh;
+  }
+  
+  form div > input::placeholder, form div > textarea::placeholder {
+  color: rgb(0, 0, 0);
+  }
+   
+  form button {
+  width: 100%;
+  height: 7vh;
+  background: rgb(0, 0, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+  color: #fffefe;
+  font-family: 'Baskervville',serif;
+  font-size: medium;
+  }
+
+  input::placeholder {
+      color: rgb(189, 122, 122);
+  }
+
+  input::placeholder {
+      color: white;
+  }
+
+  /**************************** Responsive ****************************/
+
